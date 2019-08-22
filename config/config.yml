@@ -1,0 +1,8 @@
+connection:
+  host: "Qume WebSocket Host"
+  endpoint: "Qume WebSocket Endpoint"
+  origin: "WebSocket Client Origin"
+authentication:
+  key: "API Key for User"
+  secret: "API Secret for User"
+  password: "User Password"
