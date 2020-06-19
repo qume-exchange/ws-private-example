@@ -16,6 +16,8 @@ authentication:
   secret: <API Secret for User>
   password: <User Password>
 ```
+> For the endpoint, make sure you use / at the beggining. For example: /v1/orders
+> For origin you can use any valid host, like: https://localhost
 
 ## Building and Running
 ```bash
