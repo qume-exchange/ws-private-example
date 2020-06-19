@@ -75,9 +75,9 @@ func main() {
 	}
 
 	connCfg.Header.Add("X-QUME-API-KEY", cfg.Auth.ApiKey)
-	connCfg.Header.Add("X-QUME-API-SIGNATURE", signature)
-	connCfg.Header.Add("X-QUME-API-TIMESTAMP", timestamp)
-	connCfg.Header.Add("X-QUME-API-PASSPHRASE", cfg.Auth.Password)
+	connCfg.Header.Add("X-QUME-SIGNATURE", signature)
+	connCfg.Header.Add("X-QUME-TIMESTAMP", timestamp)
+	connCfg.Header.Add("X-QUME-PASSPHRASE", cfg.Auth.Password)
 
 	conn, err := websocket.DialConfig(connCfg)
 	if err != nil {
